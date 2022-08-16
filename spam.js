@@ -3,24 +3,27 @@
 import fs from 'fs'
 
 // Read the api key from api.pem
-var apiKey = fs.readFileSync('api.pem');
+const api = fs.readFileSync('api.pem', { encoding: 'utf8' });
 
-var pid = fs.readFileSync('pid.pem');
+const pid = fs.readFileSync('pid.pem', { encoding: 'utf8' });
 
-var fromnumber = fs.readFileSync('fromnumber');
+const fromnumber = fs.readFileSync('fromnumber', { encoding: 'utf8' });
 
-var tonumber = fs.readFileSync('tonumber');
+const tonumber = fs.readFileSync('tonumber', { encoding: 'utf8' });
 
-console.log('API Key: ' + apiKey);
+
+console.log('API Key: ' + api);
 console.log('Project ID: ' + pid);
 console.log('From Number: ' + fromnumber);
 console.log('To Number: ' + tonumber);
 
+
+
 import { Voice } from '@signalwire/realtime-api'
 
 const client = new Voice.Client({
-  project: apiKey,
-  token: pid,
+  project: pid,
+  token: api,
   contexts: ["SPAM"]
 })
 
@@ -38,4 +41,3 @@ try {
   console.error(e)
 }
 }
-
