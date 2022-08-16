@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@signalwire/realtime-api": "^3.3.1"
+  }
+}

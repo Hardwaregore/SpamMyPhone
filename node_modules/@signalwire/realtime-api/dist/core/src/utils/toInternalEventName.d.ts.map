@@ -1,0 +1,1 @@
+{"version":3,"file":"toInternalEventName.d.ts","sourceRoot":"","sources":["../../../../../core/src/utils/toInternalEventName.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,YAAY,EAAE,MAAM,gBAAgB,CAAA;AAE7C,aAAK,yBAAyB,CAC5B,UAAU,SAAS,YAAY,CAAC,eAAe,IAC7C;IACF,KAAK,EAAE,YAAY,CAAC,UAAU,CAAC,UAAU,CAAC,CAAA;IAC1C,SAAS,CAAC,EAAE,MAAM,CAAA;CACnB,CAAA;AAED,eAAO,MAAM,mBAAmB,wJAiB/B,CAAA"}
