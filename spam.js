@@ -21,6 +21,8 @@ const client = new Voice.Client({
   contexts: ["SPAM"]
 })
 
+// while ture loop
+while (true) {
 try {
   const call = await client.dialPhone({
     from: number,  // The number you bought from SignalWire
@@ -28,8 +30,9 @@ try {
     timeout: 30
   })
 
-  console.log('The call has been answered!', call.id)
+  console.log('SUCCESS!!! ', call.id)
 } catch (e) {
   console.error(e)
+}
 }
 
